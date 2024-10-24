@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function Warna(kode) {
+        document.getElementById("teks_warna").style.color = kode;
+      }
+
+      function GantiOver() {
+        document.getElementById("teks_ganti").innerHTML =
+          "Mouse ini melewati  baris ini dan hilang";
+      }
+      const GantiOut = () => {
+        document.getElementById("teks_ganti").innerHTML =
+          "Tulisan ini akan berganti ketika mouse lewat diatas";
+      };
+    </script>
+  </head>
+  <body>
+    <p
+      id="teks_warna"
+      onclick="Warna('red')"
+      onmouseover="Warna('blue')"
+      onmouseout="Warna('black')"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptate
+      voluptas rem dignissimos deserunt iste. Quo libero atque, corrupti numquam
+      fugit omnis! Necessitatibus, optio veniam cupiditate voluptatem adipisci
+      temporibus quidem.
+    </p>
+    <p id="teks_ganti" onmouseover="GantiOver()">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+      totam eaque reiciendis, dicta mollitia modi tempora dolor ullam veritatis
+      vero temporibus repellendus laborum quibusdam distinctio molestiae! Sed
+      dolorem eius quas?
+    </p>
+  </body>
+</html>

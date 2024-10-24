@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function GantiWarna() {
+        document.getElementById("teks").style.color = "blue";
+      }
+
+      function Sembuyi() {
+        document.getElementById("teks").style.display = "none";
+      }
+
+      const Tampilkan = () => {
+        document.getElementById("teks").style.display = "block";
+      };
+    </script>
+  </head>
+  <body>
+    <p id="teks">Tulisa ini berwarna hitam.Tulisan ini dapat berganti warna</p>
+    <button type="button" onclick="GantiWarna()" value="Ubah Style">
+      Ganti warna
+    </button>
+    <button type="button" onclick="Sembuyi()" value="Sembunyikan">
+      Sembunyikan
+    </button>
+    <button type="button" onclick="Tampilkan()" value="Tampilkan">
+      Tampilkan
+    </button>
+  </body>
+</html>

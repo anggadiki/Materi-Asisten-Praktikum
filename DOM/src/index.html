@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mengganti elemen HTML</title>
+    <script type="text/javascript">
+      function GantiIsi() {
+        let x = document.getElementById("paragraf");
+        x.innerHTML = "<strong>Paragraf sudah di ganti</strong>";
+      }
+    </script>
+  </head>
+  <body>
+    <p id="paragraf">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iure
+      enim ut provident, consequatur architecto asperiores minus odio unde cum
+      quaerat non, consequuntur quidem assumenda! Itaque quasi omnis debitis?
+      Dicta.
+    </p>
+    <button type="button" onclick="GantiIsi()">Ganti</button>
+  </body>
+</html>
