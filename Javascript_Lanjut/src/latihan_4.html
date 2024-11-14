@@ -1,0 +1,38 @@
+<!-- file: P08-4-Waktu.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript: Waktu & Hikmah</title>
+    <style>
+      #digit {
+        background: rgb(200, 200, 200);
+        margin: auto;
+        padding: 5px;
+        width: 100px;
+        border-radius: 15px;
+      }
+      #hikmah {
+        background: gray;
+        color: white;
+        margin: auto;
+        padding: 15px;
+        width: 600px;
+        border-radius: 10px;
+      }
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p><em>Waktu saat ini :</em></p>
+    <div id="digit"></div>
+    <script type="text/javascript" src="js/waktu.js"></script>
+
+    <p><em>Hikmah hari ini :</em></p>
+    <div id="hikmah"></div>
+    <script type="text/javascript" src="js/hikmah.js"></script>
+
+    <input type="button" onclick="tulisHikmah()" value="Hikmah Lain" />
+  </body>
+</html>

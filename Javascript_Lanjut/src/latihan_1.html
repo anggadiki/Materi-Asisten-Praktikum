@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript: Cek Form</title>
+    <script type="text/javascript">
+      function cekNama() {
+        if (document.isian.nama.value == "") {
+          alert("Anda belum mengisi Nama");
+        }
+      }
+      function cekNim() {
+        if (document.isian.nim.value == "") {
+          alert("Anda belum mengisi NIM");
+        }
+      }
+      function cekAlamat() {
+        if (document.isian.alamat.value == "") {
+          alert("Anda belum mengisi alamat");
+        }
+      }
+      function terimaKasih() {
+        if (
+          document.isian.nama.value != "" &&
+          document.isian.nim.value != "" &&
+          document.isian.alamat.value != ""
+        ) {
+          alert("Terimakasih Telah Mengisi Data");
+        } else {
+          alert("Mohon lengkapi data terlebih dahulu");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="isian" method="post">
+      <fieldset>
+        <legend>Isikan Data Anda</legend>
+        <ul>
+          <li>
+            <label for="nama">Nama Lengkap</label><br />
+            <input name="nama" class="text" type="text" onBlur="cekNama()" />
+          </li>
+          <li>
+            <label for="nim">NIM</label><br />
+            <input name="nim" class="text" type="text" onBlur="cekNim()" />
+          </li>
+          <li>
+            <label for="alamat">Alamat</label><br />
+            <input
+              name="alamat"
+              class="text"
+              type="text"
+              onBlur="cekAlamat()"
+            />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="button">
+        <input
+          name="submit"
+          type="submit"
+          value="Simpan"
+          onClick="terimaKasih()"
+        />
+        <input name="reset" type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>

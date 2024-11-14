@@ -1,0 +1,46 @@
+<!-- file: P08-3-Slideshow.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript: Slideshow Image</title>
+    <style>
+      #gambar {
+        height: 500px;
+        width: 800px;
+        margin: 0 auto;
+      }
+      body {
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+    <script type="text/javascript">
+      let gbrSlideshow = new Array(); // array untuk menampung image
+      gbrSlideshow[0] = new Image(); // objek image array
+      gbrSlideshow[0].src = "img/gambar1.png"; // file gambar
+      gbrSlideshow[1] = new Image();
+      gbrSlideshow[1].src = "img/gambar2.png";
+      gbrSlideshow[2] = new Image();
+      gbrSlideshow[2].src = "img/gambar3.png";
+    </script>
+  </head>
+  <body>
+    <p>Demo penggunaan JavaScript untuk Slideshow Image</p>
+    <img src="" id="gambar" />
+    <script type="text/javascript">
+      let urut = 0; // urutan image yang ditampilkan
+      let jeda = 2000; // jeda waktu dalam satuan milidetik
+      let jumlahImage = gbrSlideshow.length - 1;
+      function slideShowImage() {
+        // jika browser tidak mendukung image, keluar
+        if (!document.images) return;
+        document.getElementById("gambar").src = gbrSlideshow[urut].src;
+        if (urut < jumlahImage) urut++;
+        else urut = 0;
+        // pergantian image setiap jeda
+        setTimeout("slideShowImage()", jeda);
+      }
+      slideShowImage();
+    </script>
+  </body>
+</html>
