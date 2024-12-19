@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>P10-2 : Jumbotron</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        padding-top: 3.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">P.A.W.</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"
+              >Beranda <span class="visually-hidden">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contoh Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Contoh Disabled Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown01"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Contoh Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+              <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+              <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+              <li><a class="dropdown-item" href="#">Submenu 3</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex my-2">
+          <label for="keyword" class="visually-hidden">Keyword</label>
+          <input
+            id="keyword"
+            class="form-control me-2"
+            type="text"
+            placeholder="Keyword"
+            aria-label="Keyword"
+          />
+          <button class="btn btn-outline-success" type="submit">Cari</button>
+        </form>
+      </div>
+    </nav>
+    <main role="main">
+      <div class="bg-light py-5">
+        <div class="container">
+          <h1 class="display-3">Selamat Datang!</h1>
+          <p>
+            Anda memasuki kampus kejuangan, tempat penempaan para Achmad Yani
+            Muda, untuk dipersiapkan sebagai generasi penerus bangsa beberapa
+            dekade ke depan. Di kampus ini Anda akan dibekali dengan serangkaian
+            kegiatan akademik dan ekstra kurikuler pendukung pengembangan diri.
+          </p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="#" role="button"
+              >Baca Selengkapnya &raquo;</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>S-1 Informatika</h2>
+            <p>
+              Program studi ini mempersiapkan mahasiswa-mahasiswa yang siap
+              menjadi Software Engineer dengan menanamkan konsep Software
+              Engineering secara mendalam selama masa perkuliahan.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >Baca Selengkapnya &raquo;</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h2>S-1 Sistem Informasi</h2>
+            <p>
+              Program studi ini mempersiapkan tenaga-tenaga yang siap
+              mengimplementasikan E-Business dan E-Commerce sebagai salah satu
+              penopang ekonomi dan kemakmuran rakyat pada umumnya.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >Baca Selengkapnya &raquo;</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h2>S-1 Teknologi Informasi</h2>
+            <p>
+              Program studi ini mempersiapkan calon ahli Web Security, sebagai
+              salah satu pendukung masyarakat modern dan teknologi terapan yang
+              berhasil guna.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >Baca Selengkapnya &raquo;</a
+              >
+            </p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </main>
+    <footer class="container">
+      <p>Universitas Jenderal A. Yani Yogyakarta &copy; 2018-2023</p>
+    </footer>
+  </body>
+</html>
